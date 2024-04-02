@@ -1,0 +1,27 @@
+body {
+    background-color: #43776c;
+    color: #fdf8f8;
+    text-align: center;
+  }
+
+.Social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+  .Social a {
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .Social a:hover {
+    transform: translateY(-5px);
+  }
+  
+  .Social svg {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+  }

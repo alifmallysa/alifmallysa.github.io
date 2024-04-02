@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #d1dfde;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #43776c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem 0;
+}
+
+p {
+  margin: 0 0 1.5rem 0;
+}
+
+a {
+  color: #dadfdf;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Content Styles */
+#content1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 2rem;
+  background-color: #f5f5f5;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#content1 img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #43776c;
+  padding: 1rem;
+  text-align: center;
+  color: #d4e2e3;
+  margin-top: 2rem;
+}

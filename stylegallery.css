@@ -1,0 +1,38 @@
+body {
+    background-color: #d1dfde;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #43776c;
+  }
+  
+  .conten {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hed {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .Gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .Gallery img {
+    width: 45%;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (max-width: 768px) {
+    .Gallery img {
+      width: 100%;
+    }
+  }
