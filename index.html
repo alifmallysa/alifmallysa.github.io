@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portofolio</title>
     <link rel="stylesheet" href="styleindex.css" />
+    <style>
+        /* CSS untuk animasi */
+        .animated-img {
+            position: relative;
+            animation: moveUpDown 2s infinite alternate; /* Animasi berulang naik turun */
+        }
+
+        @keyframes moveUpDown {
+            0% {
+                top: 0;
+            }
+            100% {
+                top: 100px; /* Ganti angka ini untuk mengatur perjalanan vertikal */
+            }
+        }
+    </style>
 </head>
 <body>
    <!-- NAVBAR MULAI-->
@@ -27,17 +43,41 @@
    <!-- NAVBAR SELESAI -->
 
    <!-- CONTEN 1 mulai -->
-   <div>
+   <div class="animated-img">
     <img src="img/alip3.jpg" width="500" height="50%" alt/>
+
    </div>
    <!-- CONTEN 1 SELESAI-->
-</body>
 
-<footer>
-   <!-- FOOTER MULAI -->
-   <div>
-    <h2>Selamat Datang!</h2> 
-   </div>
+    <!-- FOOTER MULAI -->
+ <footer>
+    <div>
+     <h2></h2> 
+    </div>
+   </footer>
    <!-- FOOTER SELESAI-->
-</footer>
+
+   <!-- JavaScript untuk mengatur animasi -->
+   <script>
+       // JavaScript untuk mengatur animasi gambar naik turun
+       const img = document.querySelector('.animated-img img');
+       img.style.position = 'relative';
+       img.style.top = '0';
+
+       function startAnimation() {
+           img.style.animationPlayState = 'running';
+       }
+       function stopAnimation() {
+           img.style.animationPlayState = 'paused';
+       }
+   </script>
+</body>
 </html>
+
+ <!-- FOOTER MULAI -->
+ <footer>
+    <div>
+     <h2>Selamat Datang!</h2> 
+    </div>
+   </footer>
+   <!-- FOOTER SELESAI-->
